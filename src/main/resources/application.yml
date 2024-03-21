@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    group:
+      dev:
+        - dev
+      prod:
+        - prod
+    active: prod
+  data:
+    mongodb:
+      authentication-database: admin
+      auto-index-creation: true
+      database: mongodb
+      username: username
+      password: password
+      port: 27017
+      host: localhost
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
